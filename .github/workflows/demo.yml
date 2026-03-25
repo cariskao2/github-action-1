@@ -24,3 +24,9 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           date
+  build_on_macos:
+    runs-on: macos-latest
+    steps:
+      - name: run multi-line script
+        run: |
+          echo "hello github actions"
